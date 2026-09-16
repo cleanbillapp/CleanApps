@@ -1,7 +1,7 @@
 /* ==========================================================================
    Clean Apps 公式サイト — style.css
    デザイン基準: 添付画像②に忠実。ダーク背景・グリーン/ブルー/オレンジの
-   3アプリカラー・引き算のデザイン思想を維持すること。
+   4アプリカラー・引き算のデザイン思想を維持すること。
    ========================================================================== */
 
 :root {
@@ -21,6 +21,8 @@
   --tax-color-soft: rgba(61, 110, 240, 0.14);
   --site-color: #ff8a1f;
   --site-color-soft: rgba(255, 138, 31, 0.14);
+  --pay-color: #f4b400;
+  --pay-color-soft: rgba(244, 180, 0, 0.14);
 
   --accent-green: #4caf50;
 
@@ -286,13 +288,14 @@ button {
 
 .app-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin: 0 0 32px;
 }
 
 @media (min-width: 640px) {
   .app-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
   }
 }
@@ -474,6 +477,7 @@ section {
 .app-row.bill:hover { border-color: var(--bill-color); }
 .app-row.tax:hover { border-color: var(--tax-color); }
 .app-row.site:hover { border-color: var(--site-color); }
+.app-row.pay:hover { border-color: var(--pay-color); }
 
 /* --------------------------------------------------------------------- */
 /* Features section                                                         */

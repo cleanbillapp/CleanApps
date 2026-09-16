@@ -52,7 +52,7 @@
   // 友達に教える（共有シート）
   var shareData = {
     title: 'Clean Apps',
-    text: 'Clean Apps｜3つのアプリで、仕事が変わる。シンプル・無料・使いやすい仕事アプリです。',
+    text: 'Clean Apps｜4つのアプリで、仕事が変わる。シンプル・無料・使いやすい仕事アプリです。',
     url: window.location.href
   };
 

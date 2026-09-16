@@ -1,6 +1,6 @@
 # Clean Apps 公式サイト
 
-CleanBill / CleanTax / CleanSite の公式入口サイトです。
+CleanBill / CleanTax / CleanSite / CleanPay の公式入口サイトです。
 静的HTML/CSS/JSのみで構成されており、GitHub Pagesでそのまま公開できます。
 
 ## ファイル構成
@@ -37,6 +37,7 @@ clean-apps-site/
 - CleanBill: `https://cleanbillapp.github.io/PLOMPT/`
 - CleanTax: `https://cleanbillapp.github.io/CleanTax/`
 - CleanSite: `https://cleanbillapp.github.io/CleanSite/`
+- CleanPay: `https://cleanbillapp.github.io/CleanPay/`
 
 このサイトのリポジトリ名やユーザー名が異なる場合でも、CSSやJS、内部リンク（`terms.html`など）はすべて相対パスで記述しているため、リポジトリ名を変えても問題なく動作します。
 
@@ -55,14 +56,14 @@ clean-apps-site/
 
 | 変更したい内容 | 編集するファイル |
 |---|---|
-| メインコピー・サブコピー・3つのアプリの説明文 | `index.html`（`<section class="hero">` 付近） |
-| 各アプリへのリンク先URL | `index.html`内の `href="https://cleanbillapp.github.io/..."` の部分（3箇所ずつ、計6箇所） |
+| メインコピー・サブコピー・4つのアプリの説明文 | `index.html`（`<section class="hero">` 付近） |
+| 各アプリへのリンク先URL | `index.html`内の `href="https://cleanbillapp.github.io/..."` の部分（4箇所ずつ、計8箇所） |
 | 特徴セクションの5項目 | `index.html`（`<section class="section" id="features">` 付近） |
 | ブランドストーリー文章 | `index.html`（`<section class="section" id="about">` 付近） |
 | 色・余白などデザイン全般 | `css/style.css` 冒頭の `:root` 内の変数（色を変える場合はここだけでOK） |
 | 利用規約／プライバシーポリシー／免責事項の文面 | それぞれ `terms.html` / `privacy.html` / `disclaimer.html` |
 
-将来アプリを追加する場合は、`index.html`のファーストビュー内の `.app-grid`、アプリ一覧セクションの `.apps-list` にそれぞれカードを1つ追加する形になります（現時点では3つ固定で表示していますが、HTML/CSSの構造自体は4つ目以降を追加しやすい形にしてあります）。
+将来アプリを追加する場合は、`index.html`のファーストビュー内の `.app-grid`、アプリ一覧セクションの `.apps-list` にそれぞれカードを1つ追加する形になります（現在は4つを表示しています。今後の追加も同じ構造で対応できます）。
 
 ## 注意事項
 
